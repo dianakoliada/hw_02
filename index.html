@@ -5,11 +5,57 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Home work_02</title>
 </head>
 
 <body>
+   <p>
+      Home work_02
+   </p>
+   <script>
+      const SomeNumber = 294;
+      console.log(`${SomeNumber.toString(2)}`); // binary system
+      console.log(`${SomeNumber.toString(16)}`); // hex system
 
+      let num = + prompt('enter a number'); // + избегаю конкатенацию string
+      console.log(num += 2); // прибавили к num(выбор пользователя) 2 и присвоили.
+      console.log(num -= 2); // от предыдущего результата отняли 2 и присвоили.
+      console.log(num *= 2);
+      console.log(num /= 2);
+
+      console.log('enter a number'.length);
+
+      console.log(+(0.51000002 + 2).toFixed(2));
+
+      //СТРОКИ
+      const str = 'the quick brown fox jumps over the lazy dogs back';
+      const str_two = 'brown fox jumps';
+      console.log(str.indexOf(str_two, 0));
+      console.log(str.toUpperCase());
+
+      //ЛОГИЧЕСКИЕ ОПЕРАЦИИ
+      let a = 1;
+      let b = 2;
+      let c = 3;
+      let d = 4;
+      console.log((a < c) || (b > c) || (c < d)); // true
+      console.log(true || false || true);
+
+      console.log((a < c) && (b < c) && (c < d)); // true
+      console.log(true && true && true);
+
+      //Задача со ЗВЕЗДОЧКОЙ, творческое задание:
+      //различая между == и ===
+      console.log(1 == true); // true
+      console.log(1 === true); // false, different types. We need similar type
+
+      //работа оператора ??
+      let example;
+      console.log(example ?? 'Anonymous'); // Anonymous
+
+      let SpecialExample = "Example";
+      console.log(SpecialExample ?? 'Anonymous'); // Example
+   </script>
 </body>
 
 </html>
